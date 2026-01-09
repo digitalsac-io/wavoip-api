@@ -1,0 +1,21 @@
+{
+  "name": "@digitalsac/wavoip-api-compat",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./index.js",
+      "require": "./index.js",
+      "default": "./index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "index.js",
+    "src"
+  ]
+}
