@@ -1,21 +1,26 @@
 {
-  "name": "@digitalsac/wavoip-api-compat",
-  "version": "2.1.7-compat",
+  "name": "@wavoip/wavoip-api",
+  "version": "2.1.7",
   "license": "MIT",
-  "main": "index.js",
-  "module": "index.js",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./index.js",
-      "require": "./index.js",
-      "default": "./index.js"
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
     }
   },
   "files": [
     "dist",
-    "index.js",
+    "LICENSE",
     "src"
-  ]
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "@alexanderolsen/libsamplerate-js": "^2.1.2",
+    "axios": "^1.12.2",
+    "socket.io-client": "^4.8.1"
+  }
 }
